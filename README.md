@@ -1,3 +1,6 @@
 # Steering Wheel Predicition using Deep Learning
-![](logo.png)
-This project is my graduation project.
+![](logo__.png)
+This project aims 
+
+# Model Architecture
+![]
