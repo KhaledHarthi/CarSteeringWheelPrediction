@@ -16,3 +16,15 @@ The the input was splitted into a sequence of 15 consecutive images, the sequenc
 During building this model, we’ve tried so many tricks such as residual connections between convolutional layers which boosted the performance and made the layers avoid the problem of vanishing gradients. We’ve used ReLU non-linear activation function to speed up the training process. No regularization were used but dropout with keep probability of 25% between every convolutional layer and fully-connected layers except the last one. Batch normalization was used after all the convolutional layers. We’ve noticed that after using max-pooling rather than strides the model was able to achieve a lower MSE by 11%.
 <br><br>
 In the training process we’ve optimized the model for 100 epochs, and used checkpoints to save the model that has the least test error, also we’ve lowered Adam optimizer’s learning rate to 0.0005 which gave us better performance, and since the data can’t fit in memory we’ve used mini-batch gradient descent with 20 batch size.
+
+# Results & Evaluation
+The model was able to achieve an RMSE of 0.0678, and was able to generalize well the unseen data, and was surprisingly able to predict the angle of steep turns with only a few examples. In Figure 4.1, we’ve plotted the predicted and the measured angles (ground truth), and as you can see the model was able to predict steep turns (large angles) almost perfectly.
+<br>
+<br>
+![](pics/measure_predicted.png)
+![](pics/measure_predicted_scatter.png)
+<br><br>
+We can see that the predicted values and the measured values have high correlation, which indicates that the model was able to generalize well.
+
+# Future Work
+We believe that further tuning will definitely give better result, and the model will benefit from additional data, one method for providing additional data is to use GAN models to generate more images of steep turns, and winter/rainy weather from the existing summer weather.
