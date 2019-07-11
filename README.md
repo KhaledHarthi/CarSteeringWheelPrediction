@@ -1,5 +1,5 @@
 # Steering Wheel Predicition using Deep Learning
-<img style="align:center" src="pics/logo.png"/>
+<img style="display: block" src="pics/logo.png"/>
 
 This project aims to build a system on top of a CNN model that will be able to control the angle of the steering wheel only.
 
