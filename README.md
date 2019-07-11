@@ -4,4 +4,4 @@
 This project aims 
 
 # Model Architecture
-![](arichitecture.png)
+![](architecture.png)
