@@ -1,5 +1,5 @@
 # Steering Wheel Predicition using Deep Learning
-![](logo__.png)
+![](logo_.png)
 This project aims 
 
 # Model Architecture
