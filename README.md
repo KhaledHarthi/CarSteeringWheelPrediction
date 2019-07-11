@@ -22,7 +22,7 @@ The model was able to achieve an <b>*RMSE*</b> of <b>*0.0678*</b>, and was able 
 <br>
 <br>
 <p align="center"><img src="pics/measure_predicted.png"/></p>
-<p align="center"><img src="/measure_predicted_scatter.png"/></p>
+<p align="center"><img src="pics/measure_predicted_scatter.png"/></p>
 <br><br>
 We can see that the predicted values and the measured values have high correlation, which indicates that the model was able to generalize well.
 
