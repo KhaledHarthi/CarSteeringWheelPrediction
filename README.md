@@ -9,7 +9,7 @@ We’ve tried to design the model architecture depending on the nature of the da
 
 ![](pics/architecture.png)
 
-<div style="text-align: justify">A <b>CNN-LSTM</b> model consists of two models. First, the CNN model which takes the input images and perform feature extraction. Second, comes the RNN model which takes the feature map sequences produced by CNN and learn the patterns, hopefully this part will learn the dynamics of driving a car.</div>
+<p style='text-align: justify;'>A <b>CNN-LSTM</b> model consists of two models. First, the CNN model which takes the input images and perform feature extraction. Second, comes the RNN model which takes the feature map sequences produced by CNN and learn the patterns, hopefully this part will learn the dynamics of driving a car.</p>
 
 The the input was splitted into a sequence of 15 consecutive images, the sequence at time t is the set of images {t, t-1, t-2 ... t-14}. The sequences was constructed first then shuffled since the data has a high correlation between adjacent samples, shuffling the training data was mandatory. The LSTM will see a sequence of 10 samples, since the other 5 will be eaten by the convolutional layers.
 
