@@ -1,7 +1,9 @@
 # Steering Wheel Predicition using Deep Learning
 <p align="center"><img src="pics/pr_logo.png"/></p>
 
-This project aims to build a system on top of a CNN model that will be able to control the angle of the steering wheel only.
+This project aims to build a Convolutional Neural Network model that will be able to predict the angle of the steering wheel from road images.
+<p align="center"><img src="pics/visualization.gif"/></p>
+# Result
 
 # Model Architecture
 
@@ -15,7 +17,7 @@ The the input was splitted into a sequence of 15 consecutive images, the sequenc
 <br><br>
 During building this model, we’ve tried so many tricks such as <b>*residual connections*</b> between convolutional layers which boosted the performance and made the layers avoid the problem of vanishing gradients. We’ve used ReLU non-linear activation function to speed up the training process. No regularization were used but dropout with keep probability of 25% between every convolutional layer and fully-connected layers except the last one. Batch normalization was used after all the convolutional layers. We’ve noticed that after using max-pooling rather than strides the model was able to achieve a lower MSE by 11%.
 <br><br>
-In the training process we’ve optimized the model for 100 epochs, and used checkpoints to save the model that has the least test error, also we’ve lowered Adam optimizer’s learning rate to <b>*0.0005*</b> which gave us better performance, and since the data can’t fit in memory we’ve used mini-batch gradient descent with 20 batch size.
+In the training process we’ve optimized the model for <b>100 epochs</b>, and used checkpoints to save the model that has the least test error, also we’ve lowered Adam optimizer’s learning rate to <b>*0.0005*</b> which gave us better performance, and since the data can’t fit in memory we’ve used mini-batch gradient descent with 20 batch size.
 
 # Results & Evaluation
 The model was able to achieve an <b>*RMSE*</b> of <b>*0.0678*</b>, and was able to generalize well the unseen data, and was surprisingly able to predict the angle of steep turns with only a few examples. we’ve plotted the predicted and the measured angles (ground truth), and as you can see the model was able to predict steep turns (large angles) almost perfectly.
@@ -23,8 +25,7 @@ The model was able to achieve an <b>*RMSE*</b> of <b>*0.0678*</b>, and was able 
 <br>
 <p align="center"><img src="pics/measure_predicted.png"/></p>
 <p align="center"><img src="pics/measure_predicted_scatter.png"/></p>
-<br><br>
 We can see that the predicted values and the measured values have high correlation, which indicates that the model was able to generalize well.
 
 # Future Work
-We believe that further tuning will definitely give better result, and the model will benefit from additional data, one method for providing additional data is to use GAN models to generate more images of steep turns, and winter/rainy weather from the existing summer weather.
+We believe that further tuning will definitely give better result, and the model will benefit from additional data, one method for providing additional data is to use <b>GAN</b> models to generate more images of steep turns, and winter/rainy weather from the existing summer weather.
