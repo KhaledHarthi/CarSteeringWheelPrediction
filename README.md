@@ -2,11 +2,12 @@
 <p align="center"><img src="pics/pr_logo.png"/></p>
 With the improvements in computer hardware and the usage of deep learning techniques, computers were able to reach a level of intelligence it has never reached before, and the field of computer vision provided greater results when using deep learning techniques, especially the Convolutional Neural Networks, the network that mimics how the human brain actually sees. One of humans' toughest problems is automation, and automation in cars will provide various benefits to humans including less traffic, and better time utilization. In this project a simulation system will be built on top of a CNN-LSTM model that will be able predict the steering wheel.
 
-### Predicted vs. Ground Truth Angles
+## Predicted vs. Ground Truth Angles
 <p align="center"><img src="pics/visualization.gif"/></p>
 
-#### Safe Area using Hough Lines
+## Safe Area using Hough Lines
 <p align="center"><img src="pics/safe_area.gif"/></p>
+
 ## Model Architecture
 
 We’ve tried to design the model architecture depending on the nature of the data and the problem itself, and since the data was a video footage, we thought about it as a sequence of images, and what suits this type of data is <b>Recurrent Neural Networks (RNN)</b>, thus we’ve constructed a <b>CNN-LSTM</b> model.
