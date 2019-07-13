@@ -1,8 +1,13 @@
 # Steering Wheel Predicition using Deep Learning
 <p align="center"><img src="pics/pr_logo.png"/></p>
 
-This project aims to build a Convolutional Neural Network model that will be able to predict the angle of the steering wheel from road images.
+With the improvements in computer hardware and the usage of deep learning techniques, computers were able to reach a level of intelligence it has never reached before, and the field of computer vision provided greater results when using deep learning techniques, especially the Convolutional Neural Networks, the network that mimics how the human brain actually sees. One of humans' toughest problems is automation, and automation in cars will provide various benefits to humans including less traffic, and better time utilization. In this project a simulation system will be built on top of a CNN-LSTM model that will be able predict the steering wheel.
+
+### Predicted vs. Ground Truth Angles
 <p align="center"><img src="pics/visualization.gif"/></p>
+
+#### Safe Area using Hough Lines
+<p align="center"><img src="pics/save_area.gif"/></p>
 
 ## Model Architecture
 
@@ -18,7 +23,7 @@ During building this model, I’ve tried so many tricks such as <b>*residual con
 <br><br>
 In the training process I’ve optimized the model for <b>100 epochs</b>, and used checkpoints to save the model that has the least test error, also I’ve loIred Adam optimizer’s learning rate to <b>*0.0005*</b> which gave us better performance, and since the data can’t fit in memory I’ve used mini-batch gradient descent with 20 batch size.
 
-# Results & Evaluation
+## Results & Evaluation
 The model was able to achieve an <b>*RMSE*</b> of <b>*0.0678*</b>, and was able to generalize Ill the unseen data, and was surprisingly able to predict the angle of steep turns with only a few examples. I’ve plotted the predicted and the measured angles (ground truth), and as you can see the model was able to predict steep turns (large angles) almost perfectly.
 <br>
 <br>
@@ -26,5 +31,5 @@ The model was able to achieve an <b>*RMSE*</b> of <b>*0.0678*</b>, and was able 
 <p align="center"><img src="pics/measure_predicted_scatter.png"/></p>
 I can see that the predicted values and the measured values have high correlation, which indicates that the model was able to generalize Ill.
 
-# Future Work
+## Future Work
 I believe that further tuning will definitely give better result, and the model will benefit from additional data, one method for providing additional data is to use <b>GAN</b> models to generate more images of steep turns, and winter/rainy Iather from the existing summer Iather.
