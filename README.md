@@ -1,6 +1,7 @@
 # Steering Wheel Predicition using Deep Learning
 <p align="center"><img src="pics/pr_logo.png"/></p>
-With the improvements in computer hardware and the usage of deep learning techniques, computers were able to reach a level of intelligence it has never reached before, and the field of computer vision provided greater results when using deep learning techniques, especially the Convolutional Neural Networks, the network that mimics how the human brain actually sees. One of humans' toughest problems is automation, and automation in cars will provide various benefits to humans including less traffic, and better time utilization. In this project a simulation system will be built on top of a CNN-LSTM model that will be able predict the steering wheel.
+In the recent years omputers were able to reach a level of intelligence it has never reached before, and the field of computer vision provided greater results when using <b>Deep Learning</b> techniques, especially the <b>*Convolutional Neural Networks*</b>. Autonomous driving will provide various benefits to humans including *less traffic*, and better *time utilization*.
+In this project a <b>CNN-LSTM model</b> will be built to predict the cars' steering wheel angel.
 
 ## Predicted vs. Ground Truth Angles
 <p align="center"><img src="pics/visualization.gif"/></p>
