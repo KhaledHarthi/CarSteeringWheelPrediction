@@ -1,6 +1,6 @@
 # Steering Wheel Predicition using Deep Learning
 <p align="center"><img src="pics/pr_logo.png"/></p>
-In the recent years omputers were able to reach a level of intelligence it has never reached before, and the field of computer vision provided greater results when using <b>Deep Learning techniques</b>, especially the <b>Convolutional Neural Networks</b>. So in this project a <b>CNN-LSTM model</b> will be built to predict the cars' steering wheel angel.
+In the recent years omputers were able to reach a level of intelligence it has never reached before, and the field of computer vision provided greater results when using <b>Deep Learning techniques</b>, especially the <b>Convolutional Neural Networks</b>. So in this project a <b>CNN-LSTM model</b> will be built to predict car's steering wheel angel.
 
 ## Predicted vs. Ground Truth Angles
 <p align="center"><img src="pics/visualization.gif"/></p>
